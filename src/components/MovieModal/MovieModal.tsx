@@ -2,10 +2,10 @@ import { useEffect } from "react";
 import styles from "./MovieModal.module.css";
 import { type Movie } from "../../types/movie";
 
-type MovieModalProps = {
+interface MovieModalProps {
   movie: Movie;
   onClose: () => void;
-};
+}
 
 export default function MovieModal({ movie, onClose }: MovieModalProps) {
   useEffect(() => {
